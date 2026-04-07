@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Evaluator",
+  "short_name": "AI Evaluator",
+  "version": "1.0.0",
+  "description": "Trợ lý ảo.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
